@@ -1,0 +1,41 @@
+main {
+  display: grid;
+  grid-template:
+    "welcomeText"
+    "welcomeImg"
+    "aboutText"
+    "aboutImg"
+    "portfolio"
+    "contact";
+  grid-template-rows: 1fr 2fr 2fr 2fr 6fr 2fr;
+  grid-template-columns: 90%;
+  justify-content: center;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  position: relative;
+  top: 10em;
+  width: 100%;
+  z-index: 0;
+}
+
+.mainItem {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template:
+      "welcomeText welcomeImg"
+      "aboutImg welcomeImg"
+      "aboutImg aboutText"
+      "portfolio portfolio"
+      "contact contact";
+    grid-template-rows: 0.5fr 1fr 2fr 3.5fr 1.5fr;
+    grid-template-columns: 48% 48%;
+    width: 100%;
+    z-index: 0;
+  }
+}

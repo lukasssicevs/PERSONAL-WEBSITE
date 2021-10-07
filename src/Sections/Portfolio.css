@@ -1,0 +1,181 @@
+.portfolio {
+  grid-area: portfolio;
+  display: grid;
+  grid-template:
+    "title"
+    "shipsImg"
+    "shipsDesc"
+    "arrow1"
+    "cryptoImg"
+    "cryptoDescr"
+    "arrow2"
+    "characterizatorImg"
+    "characterizatorDescr"
+    "blank";
+  grid-template-rows: 0.5fr 2fr 1fr 0.3fr 2fr 1fr 0.3fr 2fr 1fr 0.5fr;
+  grid-template-columns: 50%;
+  justify-content: center;
+  grid-row-gap: 10px;
+  grid-column-gap: 80px;
+}
+
+.portfolioItem {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  background-image: url("../img/arrow.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: arrowDance 2s infinite;
+}
+
+@keyframes arrowDance {
+  0% {
+    transform: translateY(0px);
+  }
+  5% {
+    transform: translateY(15px);
+  }
+  10% {
+    transform: translateY(10px);
+  }
+  15% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.arrow1 {
+  grid-area: arrow1;
+}
+
+.arrow2 {
+  grid-area: arrow2;
+}
+
+.display {
+  transition: 0.7s;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.description {
+  transition: 1.4s;
+}
+
+.title {
+  grid-area: title;
+}
+
+.shipsImg {
+  grid-area: shipsImg;
+  background-image: url("../img/ships.png");
+}
+
+.shipsDescr {
+  grid-area: shipsDescr;
+}
+
+.cryptoImg {
+  grid-area: cryptoImg;
+  background-image: url("../img/crypto.png");
+}
+
+.cryptoDescr {
+  grid-area: cryptoDescr;
+}
+
+.characterizatorImg {
+  grid-area: characterizatorImg;
+  background-image: url("../img/char.png");
+}
+
+.characterizatorDescr {
+  grid-area: characterizatorDescr;
+}
+
+@media only screen and (min-width: 1024px) {
+  .portfolio {
+    grid-area: portfolio;
+    display: grid;
+    grid-template:
+      "title title"
+      "shipsDescr shipsImg"
+      "arrow1 arrow1"
+      "cryptoDescr cryptoImg"
+      "arrow2 arrow2"
+      "characterizatorDescr characterizatorImg"
+      "blank blank";
+    grid-template-rows: 0.5fr 1fr 0.2fr 1fr 0.2fr 1fr 0.5fr;
+    grid-template-columns: 35% 35%;
+    justify-content: center;
+    grid-row-gap: 10px;
+  }
+
+  .display {
+    opacity: 0;
+  }
+
+  .display:hover {
+    transition: 0.3s;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .description {
+    opacity: 0;
+  }
+
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideToRight {
+    0% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+  }
+}

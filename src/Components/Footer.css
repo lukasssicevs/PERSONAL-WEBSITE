@@ -1,0 +1,123 @@
+footer {
+  width: 100%;
+  height: 24em;
+  background-color: rgba(0, 0, 0, 0.774);
+  position: relative;
+  top: 20em;
+  display: grid;
+  grid-template-areas:
+    "blank1 logo logo logo blank2"
+    "blank1 logo logo logo blank2"
+    "blank1 media media media blank2"
+    "blank1 info info info blank2"
+    "copyright copyright copyright copyright copyright";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.blank1 {
+  grid-area: blank1;
+}
+
+.blank2 {
+  grid-area: blank2;
+}
+
+footer .logo {
+  background-image: url("../img/logoFull.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: logo;
+  height: 60%;
+  align-self: center;
+}
+
+footer .media {
+  grid-area: media;
+  display: flex;
+  flex-direction: row;
+}
+
+.mediaItem {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 40%;
+  align-self: center;
+  cursor: pointer;
+}
+
+.github {
+  background-image: url("../img/github.png");
+}
+
+.github:hover {
+  background-image: url("../img/githubOn.png");
+}
+
+.linkedin {
+  background-image: url("../img/linkedin.png");
+}
+
+.linkedin:hover {
+  background-image: url("../img/linkedinOn.png");
+}
+
+.twitter {
+  background-image: url("../img/twitter.png");
+}
+
+.twitter:hover {
+  background-image: url("../img/twitterOn.png");
+}
+
+.gmail {
+  background-image: url("../img/gmail.png");
+}
+
+.gmail:hover {
+  background-image: url("../img/gmailOn.png");
+}
+
+footer .info {
+  grid-area: info;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer .info ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
+  width: 75%;
+}
+
+footer .info ul li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+footer .info ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.63);
+  font-size: 1.2em;
+  line-height: 160%;
+}
+
+footer .info ul li a:hover {
+  color: white;
+}
+
+footer .copyright {
+  grid-area: copyright;
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.63);
+}

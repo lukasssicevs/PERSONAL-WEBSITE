@@ -1,0 +1,41 @@
+.aboutText {
+  grid-area: aboutText;
+  opacity: 0;
+}
+
+.aboutImg {
+  grid-area: aboutImg;
+  background-image: url("../img/hike.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 100em;
+  transition: 0.5s;
+}
+
+.aboutImg:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+@keyframes aboutTextOn {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes aboutTextOff {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+}
