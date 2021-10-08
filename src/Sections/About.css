@@ -1,6 +1,16 @@
+.mainItem .aboutTitle {
+  width: 90%;
+}
+
 .aboutText {
   grid-area: aboutText;
   opacity: 0;
+  width: 90%;
+  text-align: left;
+}
+
+.aboutText p {
+  margin-left: 4%;
 }
 
 .aboutImg {

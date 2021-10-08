@@ -80,12 +80,17 @@ header .desktopMenu {
   display: none;
 }
 
+header .desktopMenu ul {
+  padding: 0;
+}
+
 header .desktopMenu li {
   list-style: none;
   display: inline-block;
   height: 100%;
   width: 25%;
   font-size: 1.4em;
+  text-align: center;
 }
 
 header .desktopMenu li a {
@@ -125,6 +130,8 @@ header .desktopMenu li a:hover {
   padding: 0;
   height: 100%;
   width: 100%;
+  display: grid;
+  align-items: center;
 }
 
 .langDropdown ul li {

@@ -1,15 +1,21 @@
 h1 {
-  font-size: 4em;
-  color: rgba(219, 161, 134, 0.349);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(252, 252, 252);
+  font-size: 6em;
+  margin-top: 0;
+  margin-block: 0;
 }
 
 h2 {
-  font-size: 6em;
-  margin-top: 0;
+  font-size: 2em;
+  margin-top: 6%;
+  margin-bottom: 0;
 }
 
-h4 {
+h6 {
+  margin-top: 1%;
   font-size: 1.4em;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 140%;
 }

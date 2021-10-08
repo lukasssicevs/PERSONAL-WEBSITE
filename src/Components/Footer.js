@@ -29,7 +29,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footerItem copyright">
-        <h4>©2021-All rights reserved.</h4>
+        <h6>©2021-All rights reserved.</h6>
       </div>
     </footer>
   );

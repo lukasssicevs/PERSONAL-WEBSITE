@@ -12,7 +12,12 @@ const PortfolioStatic = ({
   return (
     <div id="portfolio" className="mainItem portfolio">
       <div className=" title">
-        <h2>PORTFOLIO</h2>
+        <h1>PORTFOLIO</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quas
+          architecto facere tempore saepe quia sed, explicabo officiis
+          dignissimos voluptatem pariatur dolore voluptates illo corrupti quam
+        </p>
       </div>
       <div className="arrow1 arrow"></div>
       <div className="arrow2 arrow"></div>
@@ -20,17 +25,28 @@ const PortfolioStatic = ({
         className="portfolioItem shipsDescr description"
         style={shipsDescrStyle}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio
-        excepturi reprehenderit consectetur voluptatum aliquam et quis minima
-        exercitationem eius, ut, dolores quam illum alias atque tenetur
-        accusantium cum expedita natus. Perspiciatis id, quae quam ducimus
-        ratione quibusdam voluptatum illum fuga nesciunt neque laudantium porro,
-        odit harum. Impedit quas velit, tenetur reiciendis hic error temporibus
-        nisi, laboriosam officiis laudantium voluptatem, doloribus provident? Ex
-        qui animi enim eius! Saepe, consectetur molestias a est iusto deleniti
-        quisquam tempora excepturi quibusdam, recusandae id debitis nostrum
-        veniam, maiores aspernatur. Deleniti, libero modi, omnis eius, nostrum
-        quos vitae odio dolorum et praesentium alias provident tempore.
+        <div className="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores
+          deserunt temporibus quae provident et fuga! Dignissimos obcaecati
+          nobis voluptatum vel natus vitae! Impedit culpa maxime error molestiae
+          minus aspernatur atque, nesciunt consectetur facere a sed debitis
+          aliquid unde harum ducimus, mollitia totam voluptatum recusandae
+          tempore, repellat est? Dolores, culpa.
+        </div>
+        <div className="buttonContainer">
+          <a
+            href="https://lukasssicevs.github.io/ships.html"
+            className="pageButton"
+          >
+            PAGE
+          </a>
+          <a
+            href="https://github.com/lukasssicevs/lukasssicevs.github.io"
+            className="codeButton"
+          >
+            CODE
+          </a>
+        </div>
       </div>
       <div
         className="portfolioItem shipsImg display"
@@ -41,17 +57,25 @@ const PortfolioStatic = ({
         className="portfolioItem cryptoDescr description"
         style={cryptoDescrStyle}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio
-        excepturi reprehenderit consectetur voluptatum aliquam et quis minima
-        exercitationem eius, ut, dolores quam illum alias atque tenetur
-        accusantium cum expedita natus. Perspiciatis id, quae quam ducimus
-        ratione quibusdam voluptatum illum fuga nesciunt neque laudantium porro,
-        odit harum. Impedit quas velit, tenetur reiciendis hic error temporibus
-        nisi, laboriosam officiis laudantium voluptatem, doloribus provident? Ex
-        qui animi enim eius! Saepe, consectetur molestias a est iusto deleniti
-        quisquam tempora excepturi quibusdam, recusandae id debitis nostrum
-        veniam, maiores aspernatur. Deleniti, libero modi, omnis eius, nostrum
-        quos vitae odio dolorum et praesentium alias provident tempore.
+        <div className="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores
+          deserunt temporibus quae provident et fuga! Dignissimos obcaecati
+          nobis voluptatum vel natus vitae! Impedit culpa maxime error molestiae
+          minus aspernatur atque, nesciunt consectetur facere a sed debitis
+          aliquid unde harum ducimus, mollitia totam voluptatum recusandae
+          tempore, repellat est? Dolores, culpa.
+        </div>
+        <div className="buttonContainer">
+          <a href="https://cryptoexplorer.vercel.app/" className="pageButton">
+            PAGE
+          </a>
+          <a
+            href="https://github.com/lukasssicevs/cryptoexplorer"
+            className="codeButton"
+          >
+            CODE
+          </a>
+        </div>
       </div>
       <div
         className="portfolioItem cryptoImg display"
@@ -62,17 +86,25 @@ const PortfolioStatic = ({
         className="portfolioItem characterizatorDescr description"
         style={charDescrStyle}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dignissimos
-        illum, animi facere veniam, aliquid ut, corrupti minima perspiciatis
-        iure sapiente! Dicta, earum! Aut dignissimos dicta, aliquid ullam
-        mollitia a voluptas adipisci repellat dolor tempore atque ratione
-        blanditiis! Voluptas tempore, facere voluptatem nihil quos nam tenetur
-        laudantium dolore officiis incidunt excepturi dolor doloremque autem ut
-        vero quaerat in molestiae! Praesentium, voluptas tempora fuga eum eius
-        explicabo architecto molestias porro odio veniam voluptates fugit
-        reiciendis exercitationem obcaecati saepe sed nulla quaerat sit eos
-        soluta quia, consectetur nobis veritatis quasi? Accusamus nemo corrupti
-        esse animi adipisci a, quasi labore molestiae cupiditate rem?
+        <div className="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores
+          deserunt temporibus quae provident et fuga! Dignissimos obcaecati
+          nobis voluptatum vel natus vitae! Impedit culpa maxime error molestiae
+          minus aspernatur atque, nesciunt consectetur facere a sed debitis
+          aliquid unde harum ducimus, mollitia totam voluptatum recusandae
+          tempore, repellat est? Dolores, culpa.
+        </div>
+        <div className="buttonContainer">
+          <a href="https://characterizator.vercel.app/" className="pageButton">
+            PAGE
+          </a>
+          <a
+            href="https://github.com/lukasssicevs/characterizator"
+            className="codeButton"
+          >
+            CODE
+          </a>
+        </div>
       </div>
       <div
         className="portfolioItem characterizatorImg display"

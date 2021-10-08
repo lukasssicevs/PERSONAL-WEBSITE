@@ -33,7 +33,7 @@ main {
       "aboutImg aboutText"
       "portfolio portfolio"
       "contact contact";
-    grid-template-rows: 0.5fr 1fr 2fr 3.5fr 1.5fr;
+    grid-template-rows: 0.9fr 0.5fr 2fr 3.5fr 1.5fr;
     grid-template-columns: 48% 48%;
     width: 100%;
     z-index: 0;

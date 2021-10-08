@@ -29,32 +29,37 @@ const About = () => {
     <>
       <div className="mainItem aboutImg"></div>
       <div className="mainItem" id="about">
-        <div className="title">
-          <h2>ABOUT ME</h2>
+        <div className="aboutTitle">
+          <h1>ABOUT ME</h1>
         </div>
         <div className="aboutText" style={aboutStyle} ref={aboutRef}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem
-          accusamus a nulla minima dolore, minus quos totam? Velit possimus
-          iusto assumenda at voluptatum, quos facilis, rerum reprehenderit eos
-          reiciendis sunt ipsa nemo expedita quae sequi, labore impedit eveniet
-          minus suscipit fugit sapiente. Voluptate totam in, porro sint illum
-          aperiam animi temporibus quidem assumenda cupiditate quia. Autem quod
-          sit illo? Unde, fugit, ut at pariatur omnis odio nemo perspiciatis
-          nulla velit sint dolor? Hic deserunt aut repudiandae libero quasi
-          architecto, fugiat nihil, quis placeat sapiente eos rerum accusantium
-          ut dicta maiores dolorem omnis quia pariatur! Neque saepe quod dolore
-          tempore dignissimos quam dolores placeat nulla, vel pariatur culpa,
-          eveniet, in iste consequuntur. Labore ipsam optio ea repellendus
-          eveniet repudiandae. Quisquam tempora provident necessitatibus ipsa ex
-          libero dolorem veritatis voluptatibus velit tenetur, sed distinctio
-          exercitationem quas asperiores magnam hic dignissimos non dolores
-          praesentium aperiam. Perferendis, non? Dolorum eveniet repellendus
-          officiis enim sapiente recusandae vel temporibus eum fugit illo
-          mollitia aliquid cum sint hic distinctio sunt odit natus praesentium
-          doloribus, expedita, nobis pariatur, earum rem laborum. Quibusdam
-          voluptatum nemo sint veritatis necessitatibus laudantium fugiat quis
-          odit nobis tempora labore repellat amet fuga, quas quod esse
-          architecto suscipit in accusamus? Labore, consequatur non.
+          <h2>Who am I?</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil fuga
+            voluptatibus perferendis voluptate veritatis dolorum dolores,
+            quisquam explicabo commodi? Laudantium sunt aperiam pariatur,
+            officiis perspiciatis totam quia commodi ullam deleniti ipsa magni
+            id vero magnam iusto consequatur qui est molestias quod tempore eius
+            harum. Porro impedit eaque excepturi alias necessitatibus.
+          </p>
+          <h2>What I do?</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil fuga
+            voluptatibus perferendis voluptate veritatis dolorum dolores,
+            quisquam explicabo commodi? Laudantium sunt aperiam pariatur,
+            officiis perspiciatis totam quia commodi ullam deleniti ipsa magni
+            id vero magnam iusto consequatur qui est molestias quod tempore eius
+            harum. Porro impedit eaque excepturi alias necessitatibus.
+          </p>
+          <h2>What excites me?</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil fuga
+            voluptatibus perferendis voluptate veritatis dolorum dolores,
+            quisquam explicabo commodi? Laudantium sunt aperiam pariatur,
+            officiis perspiciatis totam quia commodi ullam deleniti ipsa magni
+            id vero magnam iusto consequatur qui est molestias quod tempore eius
+            harum. Porro impedit eaque excepturi alias necessitatibus.
+          </p>
         </div>
       </div>
     </>

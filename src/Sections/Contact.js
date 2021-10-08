@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="mainItem contact" id="contact">
       <div className="title">
-        <h2>CONNECT</h2>
+        <h1>CONNECT</h1>
       </div>
       <form className="form" action="" method="POST">
         <input

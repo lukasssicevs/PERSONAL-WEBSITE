@@ -25,6 +25,19 @@
   display: grid;
   justify-content: center;
   align-items: center;
+  grid-gap: 10%;
+}
+
+.portfolio .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio p {
+  width: 80%;
+  margin-top: 5%;
 }
 
 .arrow {
@@ -74,6 +87,51 @@
 
 .title {
   grid-area: title;
+}
+
+.text {
+  align-self: flex-end;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+
+.buttonContainer a {
+  text-decoration: none;
+  margin-inline: 10%;
+  padding-inline: 3%;
+  padding-block: 0.5%;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.pageButton {
+  color: black;
+  background-color: white;
+  border: solid white 0.5px;
+}
+
+.pageButton:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border: solid white 0.5px;
+}
+
+.codeButton {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border: solid white 0.5px;
+}
+
+.codeButton:hover {
+  color: black;
+  background-color: white;
+  border: solid white 0.5px;
 }
 
 .shipsImg {

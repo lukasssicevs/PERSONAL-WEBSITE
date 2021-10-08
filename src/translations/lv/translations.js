@@ -6,5 +6,5 @@ export const TRANSLATIONS_LV = {
   namePlaceHolder: "Vārds",
   emailPlaceHolder: "Ēpasts",
   textPlaceHolder: "Ziņa",
-  submit: "Iesniegt",
+  submit: "IESNIEGT",
 };

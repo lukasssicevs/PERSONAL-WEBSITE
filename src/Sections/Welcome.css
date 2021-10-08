@@ -11,5 +11,10 @@
   grid-area: welcomeText;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  background-image: url("../img/welcomeCode.png");
+  background-position: right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 14%;
 }
