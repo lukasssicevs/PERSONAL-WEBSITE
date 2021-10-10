@@ -25,7 +25,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-gap: 10%;
+  grid-gap: 5%;
 }
 
 .portfolio .title {
@@ -36,16 +36,16 @@
 }
 
 .portfolio p {
-  width: 80%;
   margin-top: 5%;
 }
 
 .arrow {
-  background-image: url("../img/arrow.png");
+  /* background-image: url("../img/arrow.png"); */
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   animation: arrowDance 2s infinite;
+  opacity: 0.7;
 }
 
 @keyframes arrowDance {
@@ -68,10 +68,12 @@
 
 .arrow1 {
   grid-area: arrow1;
+  background-image: url("../img/arrowGR.png");
 }
 
 .arrow2 {
   grid-area: arrow2;
+  background-image: url("../img/arrowRY.png");
 }
 
 .display {
@@ -110,7 +112,7 @@
   font-weight: bold;
 }
 
-.pageButton {
+/* .pageButton {
   color: black;
   background-color: white;
   border: solid white 0.5px;
@@ -132,6 +134,82 @@
   color: black;
   background-color: white;
   border: solid white 0.5px;
+} */
+
+/* rgba(1, 151, 146);
+rgba(227, 19, 118);
+rgba(226, 201, 168); */
+
+.greenPageButton {
+  color: black;
+  background-color: rgba(1, 151, 146);
+  border: solid rgba(1, 151, 146) 0.5px;
+}
+
+.greenPageButton:hover {
+  color: rgba(1, 151, 146);
+  background-color: rgba(255, 255, 255, 0);
+  border: solid rgba(1, 151, 146) 0.5px;
+}
+
+.greenCodeButton {
+  color: rgba(1, 151, 146);
+  background-color: rgba(255, 255, 255, 0);
+  border: solid rgba(1, 151, 146) 0.5px;
+}
+
+.greenCodeButton:hover {
+  color: black;
+  background-color: rgba(1, 151, 146);
+  border: solid rgba(1, 151, 146) 0.5px;
+}
+
+.redPageButton {
+  color: black;
+  background-color: rgba(227, 19, 118);
+  border: solid rgba(227, 19, 118) 0.5px;
+}
+
+.redPageButton:hover {
+  color: rgba(227, 19, 118);
+  background-color: rgba(255, 255, 255, 0);
+  border: solid rgba(227, 19, 118) 0.5px;
+}
+
+.redCodeButton {
+  color: rgba(227, 19, 118);
+  background-color: rgba(255, 255, 255, 0);
+  border: solid rgba(227, 19, 118) 0.5px;
+}
+
+.redCodeButton:hover {
+  color: black;
+  background-color: rgba(227, 19, 118);
+  border: solid rgba(227, 19, 118) 0.5px;
+}
+
+.yellowPageButton {
+  color: black;
+  background-color: rgba(226, 201, 168);
+  border: solid rgba(226, 201, 168) 0.5px;
+}
+
+.yellowPageButton:hover {
+  color: rgba(226, 201, 168);
+  background-color: rgba(255, 255, 255, 0);
+  border: solid rgba(226, 201, 168) 0.5px;
+}
+
+.yellowCodeButton {
+  color: rgba(226, 201, 168);
+  background-color: rgba(255, 255, 255, 0);
+  border: solid rgba(226, 201, 168) 0.5px;
+}
+
+.yellowCodeButton:hover {
+  color: black;
+  background-color: rgba(226, 201, 168);
+  border: solid rgba(226, 201, 168) 0.5px;
 }
 
 .shipsImg {

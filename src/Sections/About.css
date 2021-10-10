@@ -13,6 +13,10 @@
   margin-left: 4%;
 }
 
+.aboutText ul li{
+  list-style:circle;
+}
+
 .aboutImg {
   grid-area: aboutImg;
   background-image: url("../img/hike.png");

@@ -1,17 +1,22 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 html {
   scroll-behavior: smooth;
+}
+
+* {
+  /* font-family: "Oswald", sans-serif; */
+  font-family: "Roboto Slab", serif;
+  /* font-family: "Vollkorn SC", serif; */
+  /* font-family: "Graduate", cursive; gta*/
 }
 
 body {
   margin: 0;
   background-image: url(./img/cosmos.png);
-  background-size: cover;
-  /* font-family: "Antic Slab", serif; */
-  /* font-family: "Jost", sans-serif; */
-  /* font-family: "Julius Sans One", sans-serif; */
-  font-family: "Graduate", cursive;
+  background-repeat: no-repeat;
   color: white;
   overflow: overlay;
 }

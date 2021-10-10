@@ -2,6 +2,12 @@
   grid-area: contact;
 }
 
+.contact p {
+  width: 70%;
+  margin: 4% auto;
+  margin-bottom: 6%;
+}
+
 .form {
   margin-top: 3%;
   width: 100%;
@@ -18,13 +24,12 @@
 }
 
 .formElements {
-  background-color: rgba(190, 186, 186, 0.192);
+  background-color: rgba(190, 186, 186, 0.11);
   border: none;
   color: white;
   font-size: 2em;
   border-radius: 5px;
-  /* border: solid white 2px; */
-  text-indent: 2%;
+  border: solid white 2px;
 }
 
 .formElements:hover {
@@ -34,6 +39,7 @@
 .formElements::placeholder {
   color: rgba(156, 147, 146, 0.644);
   font-size: 0.8em;
+  text-align: center;
 }
 
 .form .name {
@@ -52,6 +58,7 @@
   grid-area: message;
   width: 100%;
   justify-self: center;
+  line-height: 140%;
 }
 
 .form .submit {
@@ -59,12 +66,12 @@
   cursor: pointer;
   width: 70%;
   justify-self: center;
-  border: solid 3px rgba(190, 186, 186, 0.192);
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0);
-  color: rgba(156, 147, 146, 0.644);
+  color: rgb(255, 255, 255);
 }
 
 .form .submit:hover {
-  background-color: rgba(37, 36, 36, 0.466);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }

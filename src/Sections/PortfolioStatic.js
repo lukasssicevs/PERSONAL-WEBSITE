@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 const PortfolioStatic = ({
   shipsDescrStyle,
   shipsStyle,
@@ -9,14 +11,13 @@ const PortfolioStatic = ({
   charStyle,
   charRef,
 }) => {
+  const { t } = useTranslation();
   return (
     <div id="portfolio" className="mainItem portfolio">
       <div className=" title">
-        <h1>PORTFOLIO</h1>
+        <h1>{t("portfolioHead")}</h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quas
-          architecto facere tempore saepe quia sed, explicabo officiis
-          dignissimos voluptatem pariatur dolore voluptates illo corrupti quam
+          {t("portfolioIntro")}
         </p>
       </div>
       <div className="arrow1 arrow"></div>
@@ -26,91 +27,94 @@ const PortfolioStatic = ({
         style={shipsDescrStyle}
       >
         <div className="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores
-          deserunt temporibus quae provident et fuga! Dignissimos obcaecati
-          nobis voluptatum vel natus vitae! Impedit culpa maxime error molestiae
-          minus aspernatur atque, nesciunt consectetur facere a sed debitis
-          aliquid unde harum ducimus, mollitia totam voluptatum recusandae
-          tempore, repellat est? Dolores, culpa.
+          <h2 style={{ color: "rgba(1, 151, 146)" }}>SHIPS</h2>
+          <p style={{ color: "rgba(1, 151, 146)" }}>
+            {t("ships")}
+          </p>
         </div>
         <div className="buttonContainer">
           <a
             href="https://lukasssicevs.github.io/ships.html"
-            className="pageButton"
+            className="greenPageButton"
           >
-            PAGE
+            {t("page")}
           </a>
           <a
             href="https://github.com/lukasssicevs/lukasssicevs.github.io"
-            className="codeButton"
+            className="greenCodeButton"
           >
-            CODE
+            {t("code")}
           </a>
         </div>
       </div>
-      <div
+      <a
+        href="https://lukasssicevs.github.io/ships.html"
         className="portfolioItem shipsImg display"
         style={shipsStyle}
         ref={shipsRef}
-      ></div>
+      > </a>
       <div
         className="portfolioItem cryptoDescr description"
         style={cryptoDescrStyle}
       >
         <div className="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores
-          deserunt temporibus quae provident et fuga! Dignissimos obcaecati
-          nobis voluptatum vel natus vitae! Impedit culpa maxime error molestiae
-          minus aspernatur atque, nesciunt consectetur facere a sed debitis
-          aliquid unde harum ducimus, mollitia totam voluptatum recusandae
-          tempore, repellat est? Dolores, culpa.
+          <h2 style={{ color: "rgba(227, 19, 118)" }}>CRYPTO EXPLORER</h2>
+          <p style={{ color: "rgba(227, 19, 118)" }}>
+            {t("cryptoexplorer")}
+          </p>
         </div>
         <div className="buttonContainer">
-          <a href="https://cryptoexplorer.vercel.app/" className="pageButton">
-            PAGE
+          <a
+            href="https://cryptoexplorer.vercel.app/"
+            className="redPageButton"
+          >
+            {t("page")}
           </a>
           <a
             href="https://github.com/lukasssicevs/cryptoexplorer"
-            className="codeButton"
+            className="redCodeButton"
           >
-            CODE
+            {t("code")}
           </a>
         </div>
       </div>
-      <div
+      <a
+        href="https://cryptoexplorer.vercel.app/"
         className="portfolioItem cryptoImg display"
         style={cryptoStyle}
         ref={cryptoRef}
-      ></div>
+      > </a>
       <div
         className="portfolioItem characterizatorDescr description"
         style={charDescrStyle}
       >
         <div className="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores
-          deserunt temporibus quae provident et fuga! Dignissimos obcaecati
-          nobis voluptatum vel natus vitae! Impedit culpa maxime error molestiae
-          minus aspernatur atque, nesciunt consectetur facere a sed debitis
-          aliquid unde harum ducimus, mollitia totam voluptatum recusandae
-          tempore, repellat est? Dolores, culpa.
+          <h2 style={{ color: "rgba(226, 201, 168)" }}>CHARACTERIZATOR</h2>
+          <p style={{ color: "rgba(226, 201, 168)" }}>
+            {t("characterizator")}
+          </p>
         </div>
         <div className="buttonContainer">
-          <a href="https://characterizator.vercel.app/" className="pageButton">
-            PAGE
+          <a
+            href="https://characterizator.vercel.app/"
+            className="yellowPageButton"
+          >
+           {t("page")}
           </a>
           <a
             href="https://github.com/lukasssicevs/characterizator"
-            className="codeButton"
+            className="yellowCodeButton"
           >
-            CODE
+            {t("code")}
           </a>
         </div>
       </div>
-      <div
+      <a
+        href="https://characterizator.vercel.app/"
         className="portfolioItem characterizatorImg display"
         style={charStyle}
         ref={charRef}
-      ></div>
+      > </a>
     </div>
   );
 };

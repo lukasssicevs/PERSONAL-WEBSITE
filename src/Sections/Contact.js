@@ -1,6 +1,6 @@
 import "./Contact.css";
 import { useTranslation } from "react-i18next";
-import "../translations/i18n";
+
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -8,7 +8,10 @@ const Contact = () => {
   return (
     <div className="mainItem contact" id="contact">
       <div className="title">
-        <h1>CONNECT</h1>
+        <h1>{t("contactHead")}</h1>
+        <p>
+          {t("contactIntro")}
+        </p>
       </div>
       <form className="form" action="" method="POST">
         <input

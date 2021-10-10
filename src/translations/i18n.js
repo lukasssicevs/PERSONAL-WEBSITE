@@ -4,6 +4,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import { TRANSLATIONS_EN } from "./en/translations";
 import { TRANSLATIONS_LV } from "./lv/translations";
+import { TRANSLATIONS_RU } from "./ru/translations";
 
 i18n
   .use(LanguageDetector)
@@ -22,6 +23,9 @@ i18n
       },
       lv: {
         translation: TRANSLATIONS_LV,
+      },
+      ru: {
+        translation: TRANSLATIONS_RU,
       },
     },
   });

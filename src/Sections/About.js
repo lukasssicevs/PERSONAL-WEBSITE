@@ -1,9 +1,12 @@
 import "./About.css";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   const [aboutStyle, setAboutStyle] = useState({});
   const aboutRef = useRef();
+  const { t } = useTranslation();
+
   useEffect(() => {
     const aboutObserver = new IntersectionObserver(
       ([entry]) => {
@@ -30,36 +33,25 @@ const About = () => {
       <div className="mainItem aboutImg"></div>
       <div className="mainItem" id="about">
         <div className="aboutTitle">
-          <h1>ABOUT ME</h1>
+          <h1>{t("aboutHead")}</h1>
         </div>
         <div className="aboutText" style={aboutStyle} ref={aboutRef}>
-          <h2>Who am I?</h2>
+          <h2 style={{ color: "rgba(247, 184, 165)" }}>{t("aboutQ1")}</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil fuga
-            voluptatibus perferendis voluptate veritatis dolorum dolores,
-            quisquam explicabo commodi? Laudantium sunt aperiam pariatur,
-            officiis perspiciatis totam quia commodi ullam deleniti ipsa magni
-            id vero magnam iusto consequatur qui est molestias quod tempore eius
-            harum. Porro impedit eaque excepturi alias necessitatibus.
+            {t("aboutA1")}
           </p>
-          <h2>What I do?</h2>
+          <h2 style={{ color: "rgba(71, 189, 255)" }}>{t("aboutQ2")}</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil fuga
-            voluptatibus perferendis voluptate veritatis dolorum dolores,
-            quisquam explicabo commodi? Laudantium sunt aperiam pariatur,
-            officiis perspiciatis totam quia commodi ullam deleniti ipsa magni
-            id vero magnam iusto consequatur qui est molestias quod tempore eius
-            harum. Porro impedit eaque excepturi alias necessitatibus.
+            {t("aboutA2")}
           </p>
-          <h2>What excites me?</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil fuga
-            voluptatibus perferendis voluptate veritatis dolorum dolores,
-            quisquam explicabo commodi? Laudantium sunt aperiam pariatur,
-            officiis perspiciatis totam quia commodi ullam deleniti ipsa magni
-            id vero magnam iusto consequatur qui est molestias quod tempore eius
-            harum. Porro impedit eaque excepturi alias necessitatibus.
-          </p>
+          <h2 style={{ color: "rgba(254, 218, 92)" }}>{t("aboutQ3")}</h2>
+          <ul>
+          <li><p>{t("aboutA3_1")}</p></li>
+          <li><p>{t("aboutA3_2")}</p></li>
+          <li><p>{t("aboutA3_3")}</p></li>
+          <li><p>{t("aboutA3_4")}</p></li>
+          <li><p>{t("aboutA3_5")}</p></li>
+          </ul>
         </div>
       </div>
     </>

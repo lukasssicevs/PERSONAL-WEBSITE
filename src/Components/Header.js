@@ -1,6 +1,6 @@
 import { i18n } from "../translations/i18n.js";
 import { useTranslation } from "react-i18next";
-import "../translations/i18n";
+
 
 const Header = ({
   langDropdownStyle,
@@ -40,22 +40,22 @@ const Header = ({
         <ul>
           <li onClick={() => i18n.changeLanguage("en")}>EN</li>
           <li onClick={() => i18n.changeLanguage("lv")}>LV</li>
-          <li>RU</li>
+          <li onClick={() => i18n.changeLanguage("ru")}>RU</li>
         </ul>
       </div>
       <div className="menuDropdown" style={menuDropdownStyle}>
         <ul>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">{t("about")}</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio">{t("portfolio")}</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">{t("contact")}</a>
           </li>
           <li>
-            <a href="#media">Media</a>
+            <a href="#media">{t("socialmedia")}</a>
           </li>
         </ul>
       </div>
