@@ -163,10 +163,17 @@ footer .copyright {
   }
 }
 
+@media only screen and (max-width: 420px) {
+  footer {
+    height: 25em;
+    top: 40em;
+  }
+}
+
 @media only screen and (max-width: 380px) {
   footer {
     height: 25em;
-    top: 0em;
+    top: 30em;
   }
 
   footer .info ul li {
