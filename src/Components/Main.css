@@ -1,21 +1,19 @@
 main {
   display: grid;
   grid-template:
-    "welcomeText"
-    "welcomeImg"
-    "aboutText"
-    "aboutImg"
-    "portfolio"
-    "contact";
-  grid-template-rows: 1fr 2fr 2fr 2fr 6fr 2fr;
-  grid-template-columns: 90%;
-  justify-content: center;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  position: relative;
-  top: 10em;
+    "welcomeText welcomeImg"
+    "aboutImg welcomeImg"
+    "aboutImg aboutText"
+    "portfolio portfolio"
+    "contact contact";
+  grid-template-rows: 1fr 0.5fr 2fr 3.5fr 1.5fr;
+  grid-template-columns: 48% 48%;
   width: 100%;
   z-index: 0;
+  grid-column-gap: 10px;
+  top: 10em;
+  position: relative;
+  justify-content: center;
 }
 
 .mainItem {
@@ -24,18 +22,85 @@ main {
   text-align: center;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1025px) {
   main {
     display: grid;
     grid-template:
-      "welcomeText welcomeImg"
-      "aboutImg welcomeImg"
-      "aboutImg aboutText"
-      "portfolio portfolio"
-      "contact contact";
-    grid-template-rows: 0.9fr 0.5fr 2fr 3.5fr 1.5fr;
-    grid-template-columns: 48% 48%;
+      "welcomeText"
+      "welcomeImg"
+      "aboutText"
+      "aboutImg"
+      "portfolio"
+      "contact";
+
+    grid-template-rows: 0.23fr 0.45fr 0.2fr 0.4fr 0.7fr 0.2fr;
+    grid-template-columns: 90%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mainItem {
+    width: 80%;
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  main {
+    top: 10em;
+    grid-template-rows: 0.2fr 0.3fr 0.1fr 0.4fr 0.3fr 0.1fr;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  main {
+    top: 8em;
+    grid-template-rows: 0.2fr 0.35fr 0.1fr 0.4fr 0.3fr 0.1fr;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  main {
+    top: 8em;
+    grid-template-rows: 0.2fr 0.36fr 0.1fr 0.3fr 0.3fr 0.1fr;
+  }
+
+  .mainItem {
     width: 100%;
-    z-index: 0;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  main {
+    top: 9em;
+    grid-template-rows: 0.19fr 0.27fr 0.1fr 0.3fr 0.3fr 0.1fr;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    top: 7em;
+    grid-template-rows: 0.19fr 0.25fr 0.1fr 0.2fr 0.3fr 0.1fr;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main {
+    top: 4em;
+    grid-template-rows: 0.2fr 0.23fr 0.1fr 0.3fr 0.3fr 0.1fr;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main {
+    top: 5em;
+    grid-template-rows: 0.19fr 0.24fr 0.1fr 0.3fr 0.3fr 0.1fr;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  main {
+    top: 7em;
+    grid-template-rows: 0.12fr 0.2fr 0.1fr 0.2fr 0.3fr 0.1fr;
   }
 }

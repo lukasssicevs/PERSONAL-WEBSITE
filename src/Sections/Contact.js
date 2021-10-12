@@ -1,7 +1,6 @@
 import "./Contact.css";
 import { useTranslation } from "react-i18next";
 
-
 const Contact = () => {
   const { t } = useTranslation();
 
@@ -9,11 +8,13 @@ const Contact = () => {
     <div className="mainItem contact" id="contact">
       <div className="title">
         <h1>{t("contactHead")}</h1>
-        <p>
-          {t("contactIntro")}
-        </p>
+        <p>{t("contactIntro")}</p>
       </div>
-      <form className="form" action="" method="POST">
+      <form
+        className="form"
+        action="https://formspree.io/f/xpzknvwa"
+        method="POST"
+      >
         <input
           className="formElements name"
           type="name"

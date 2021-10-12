@@ -20,7 +20,7 @@
 
   grid-gap: 25px;
   grid-template-rows: 1fr 4fr 1fr;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
 }
 
 .formElements {
@@ -74,4 +74,104 @@
 .form .submit:hover {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1025px) {
+  .contact {
+    position: relative;
+    top: 25em;
+  }
+
+  main .contact {
+    grid-area: contact;
+    width: 100%;
+  }
+
+  .contact p {
+    width: 90%;
+    margin: 4% auto;
+    margin-bottom: 6%;
+  }
+
+  .form {
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 80%;
+    height: 60%;
+    display: grid;
+    grid-template:
+      "name name email email"
+      "message message message message"
+      ". submit submit .";
+
+    grid-gap: 25px;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .form .submit {
+    font-size: 130%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .form .submit {
+    font-size: 120%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .form {
+    margin-top: 3%;
+    width: 100%;
+    height: 60%;
+    display: grid;
+    grid-template:
+      "name"
+      "email"
+      "message"
+      "submit";
+
+    grid-gap: 25px;
+    grid-template-rows: 1fr 1fr 7fr 1fr;
+    grid-template-columns: 100%;
+  }
+
+  .form .name {
+    justify-self: center;
+    width: 90%;
+  }
+
+  .form .email {
+    justify-self: center;
+    width: 90%;
+  }
+
+  .form .message {
+    justify-self: center;
+    width: 90%;
+  }
+
+  .form .submit {
+    justify-self: center;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .form .submit {
+    font-size: 100%;
+  }
 }

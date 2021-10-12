@@ -97,14 +97,12 @@ header .desktopMenu li {
 
 header .desktopMenu li a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
-  -webkit-text-stroke-width: 0.3px;
-  -webkit-text-stroke-color: rgba(240, 248, 255, 0.459);
+  color: rgba(240, 248, 255, 0.459);
   transition: 0.1s;
 }
 
 header .desktopMenu li a:hover {
-  color: aliceblue;
+  color: white;
   transition: 0.2s;
 }
 
@@ -181,7 +179,7 @@ header .desktopMenu li a:hover {
   color: aliceblue;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   header {
     grid-template: "logo blank desktopMenu language";
     grid-template-columns: 20% 20% 50% 10%;
@@ -212,5 +210,11 @@ header .desktopMenu li a:hover {
     text-align: center;
     transition: 0.3s;
     overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    grid-template-columns: 20% 50% 15% 15%;
   }
 }

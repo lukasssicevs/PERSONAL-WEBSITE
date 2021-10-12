@@ -1,20 +1,23 @@
 .mainItem .aboutTitle {
-  width: 90%;
+  width: 100%;
+  text-align: left;
 }
 
 .aboutText {
   grid-area: aboutText;
   opacity: 0;
-  width: 90%;
+  width: 100%;
   text-align: left;
+  margin: 0;
 }
 
 .aboutText p {
   margin-left: 4%;
+  width: 85%;
 }
 
-.aboutText ul li{
-  list-style:circle;
+.aboutText ul li {
+  list-style: circle;
 }
 
 .aboutImg {
@@ -23,8 +26,8 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-bottom: 100em;
   transition: 0.5s;
+  margin-bottom: 100em;
 }
 
 .aboutImg:hover {
@@ -51,5 +54,45 @@
   100% {
     transform: translateX(20px);
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .aboutTitle {
+    margin: 0 auto;
+  }
+
+  .aboutImg {
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 0;
+  }
+
+  .aboutImg:hover {
+    transform: scale(1);
+  }
+
+  .aboutText {
+    margin: 0 auto;
+  }
+
+  .aboutText p {
+    margin-left: 4%;
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mainItem .aboutTitle {
+    width: 90%;
+  }
+
+  .aboutText {
+    width: 90%;
+  }
+
+  .aboutText p {
+    margin-left: 4%;
+    width: 90%;
   }
 }

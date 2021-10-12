@@ -2,21 +2,18 @@
   grid-area: portfolio;
   display: grid;
   grid-template:
-    "title"
-    "shipsImg"
-    "shipsDesc"
-    "arrow1"
-    "cryptoImg"
-    "cryptoDescr"
-    "arrow2"
-    "characterizatorImg"
-    "characterizatorDescr"
-    "blank";
-  grid-template-rows: 0.5fr 2fr 1fr 0.3fr 2fr 1fr 0.3fr 2fr 1fr 0.5fr;
-  grid-template-columns: 50%;
+    "title title"
+    "shipsDescr shipsImg"
+    "arrow1 arrow1"
+    "cryptoDescr cryptoImg"
+    "arrow2 arrow2"
+    "characterizatorDescr characterizatorImg"
+    "blank blank";
+  grid-template-rows: 0.5fr 1fr 0.2fr 1fr 0.2fr 1fr 0.5fr;
+  grid-template-columns: 35% 35%;
   justify-content: center;
   grid-row-gap: 10px;
-  grid-column-gap: 80px;
+  grid-column-gap: 5%;
 }
 
 .portfolioItem {
@@ -81,10 +78,18 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.display:hover {
+  transition: 0.3s;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .description {
   transition: 1.4s;
+  opacity: 0;
 }
 
 .title {
@@ -239,26 +244,118 @@ rgba(226, 201, 168); */
   grid-area: characterizatorDescr;
 }
 
-@media only screen and (min-width: 1024px) {
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideToRight {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
   .portfolio {
     grid-area: portfolio;
     display: grid;
     grid-template:
-      "title title"
-      "shipsDescr shipsImg"
-      "arrow1 arrow1"
-      "cryptoDescr cryptoImg"
-      "arrow2 arrow2"
-      "characterizatorDescr characterizatorImg"
-      "blank blank";
-    grid-template-rows: 0.5fr 1fr 0.2fr 1fr 0.2fr 1fr 0.5fr;
-    grid-template-columns: 35% 35%;
+      "title"
+      "shipsImg"
+      "shipsDescr"
+      "arrow1"
+      "cryptoImg"
+      "cryptoDescr"
+      "arrow2"
+      "characterizatorImg"
+      "characterizatorDescr";
+    grid-template-rows: 1fr 1fr 0.5fr 0.8fr 1fr 0.5fr 0.8fr 1fr 0.5fr;
+    grid-template-columns: 100%;
     justify-content: center;
-    grid-row-gap: 10px;
+    grid-row-gap: 0px;
+
+    position: relative;
+    top: 10em;
+  }
+
+  .portfolioItem {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5%;
+  }
+
+  .portfolio .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portfolio .title p {
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+
+  .portfolio h2 {
+    display: none;
+  }
+
+  .portfolio p {
+    margin-top: 0%;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .arrow {
+    background-position: center;
+    background-size: 10%;
+    background-repeat: no-repeat;
   }
 
   .display {
+    transition: 0.7s;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     opacity: 0;
+    margin-top: 5%;
   }
 
   .display:hover {
@@ -268,50 +365,193 @@ rgba(226, 201, 168); */
   }
 
   .description {
+    transition: 1.4s;
     opacity: 0;
+    margin-top: 5%;
+  }
+
+  .buttonContainer a {
+    margin-inline: 2%;
   }
 
   @keyframes slideFromRight {
     0% {
-      transform: translateX(200px);
       opacity: 0;
+      transform: translateX(100px);
     }
     100% {
-      transform: translateX(0px);
       opacity: 1;
+      transform: translateX(0px);
     }
   }
 
   @keyframes slideToRight {
     0% {
-      transform: translateX(0px);
       opacity: 1;
+      transform: translateX(0px);
     }
     100% {
-      transform: translateX(200px);
       opacity: 0;
+      transform: translateX(100px);
     }
   }
 
   @keyframes slideUp {
     0% {
-      transform: translateY(50px);
       opacity: 0;
+      transform: translateX(-100px);
     }
     100% {
-      transform: translateY(0px);
       opacity: 1;
+      transform: translateX(0px);
     }
   }
 
   @keyframes slideDown {
     0% {
-      transform: translateY(0px);
       opacity: 1;
+      transform: translateX(0px);
     }
     100% {
-      transform: translateY(50px);
       opacity: 0;
+      transform: translateX(-100px);
     }
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .portfolio {
+    top: 6em;
+  }
+
+  .portfolio p {
+    margin-top: 0%;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .portfolio {
+    top: 6em;
+  }
+
+  .portfolio p {
+    margin-top: 0%;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @keyframes slideFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes slideToRight {
+    0% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes slideDown {
+    0% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .portfolio {
+    top: 6em;
+  }
+
+  .portfolio .title p {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  @keyframes slideFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes slideToRight {
+    0% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes slideDown {
+    0% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .portfolio {
+    grid-template-rows: 1fr 0.7fr 0.5fr 0.4fr 0.7fr 0.5fr 0.4fr 0.7fr 0.5fr;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .portfolio .title p {
+    width: 100%;
+    margin-bottom: 0%;
   }
 }

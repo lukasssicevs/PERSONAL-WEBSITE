@@ -14,7 +14,17 @@
   flex-direction: column;
   background-image: url("../img/welcomeCode.png");
   background-position: right;
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-size: contain;
   margin-left: 14%;
+}
+
+@media only screen and (max-width: 1025px) {
+  .welcomeText {
+    margin: 0;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 780px) {
 }

@@ -1,22 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
 html {
   scroll-behavior: smooth;
+  margin: 0;
 }
 
 * {
-  /* font-family: "Oswald", sans-serif; */
   font-family: "Roboto Slab", serif;
-  /* font-family: "Vollkorn SC", serif; */
-  /* font-family: "Graduate", cursive; gta*/
 }
 
 body {
   margin: 0;
-  background-image: url(./img/cosmos.png);
+  background-image: url(./img/cosmos.jpg);
   background-repeat: no-repeat;
+  background-size: 2100px;
   color: white;
   overflow: overlay;
 }
@@ -38,4 +35,45 @@ body {
   background-clip: padding-box;
   border-radius: 20px;
   background-color: rgba(102, 95, 95, 0.486);
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-size: 2000px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  body {
+    background-size: 2400px;
+  }
+}
+@media only screen and (min-width: 2400px) {
+  body {
+    background-size: 2800px;
+  }
+}
+
+@media only screen and (min-width: 3000px) {
+  body {
+    background-size: 3200px;
+  }
+}
+
+@media only screen and (min-width: 4600px) {
+  body {
+    background-size: 4700px;
+  }
+}
+
+@media only screen and (min-width: 6100px) {
+  body {
+    background-size: 6200px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  body {
+    background-size: 2800px;
+  }
 }
