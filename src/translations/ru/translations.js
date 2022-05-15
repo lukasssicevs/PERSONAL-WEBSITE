@@ -34,5 +34,5 @@ export const TRANSLATIONS_RU = {
   emailPlaceHolder: "Почта",
   textPlaceHolder: "Сообщение",
   submit: "ОТПРАВИТЬ",
-  copyright: "©2021 - Все права защищены.",
+  copyright: "©2022 - Все права защищены.",
 };
