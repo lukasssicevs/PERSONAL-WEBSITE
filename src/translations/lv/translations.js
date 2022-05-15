@@ -35,5 +35,5 @@ export const TRANSLATIONS_LV = {
   emailPlaceHolder: "Ēpasts",
   textPlaceHolder: "Ziņa",
   submit: "IESNIEGT",
-  copyright: "©2021-Visas tiesības aizsargātas.",
+  copyright: "©2022-Visas tiesības aizsargātas.",
 };
