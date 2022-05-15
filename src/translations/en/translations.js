@@ -34,5 +34,5 @@ export const TRANSLATIONS_EN = {
   emailPlaceHolder: "Email",
   textPlaceHolder: "Message",
   submit: "SUBMIT",
-  copyright: "©2021-All rights reserved.",
+  copyright: "©2022-All rights reserved.",
 };
